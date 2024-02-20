@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroPanes - Menú, Precios y Teléfonos.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window-background" id="window-background">
+        <div class="window-container" id="window-container">
+            <p class="theme-white">Información</p>
+            <button class="close-button" id="close-button">&times;</button>
+            <div class="modal-title-europan theme-white">
+                <h3 class="theme-white">EuroPanes</h3>
+                <img id="logo-mini-europan" src="./img/logo.jpg" alt="Logo EuroPan">
+            </div>
+            <div class="theme-white">
+                <a href="#null"  onclick="window.location.href = whatsapp"><img src="./img/redes/whats-theme-white.svg" alt=""></a>
+                <a href="#null"  onclick="window.location.href = instagram"><img src="./img/redes/insta-theme-white.svg" alt=""></a>
+                <a href="#null"  onclick="window.location.href = telefono"><img  src="./img/redes/telephone-theme-white.svg" alt=""></a>
+                <a id="share-2"  class=""><img src="./img/redes/share-theme-white.svg" alt=""></a>
+            </div>
+            <hr>
+            <div class="modal-apartados">
+                <h5 class="theme-white">Dirección</h5>
+                <a href="https://www.google.com/maps/place/5%C2%B038'03.3%22N+73%C2%B031'41.6%22W/@5.6342504,-73.5282228,17z/data=!3m1!4b1!4m4!3m3!8m2!3d5.6342504!4d-73.5282228?entry=ttu" target="_blank" class="theme-white div-address"><img src="./img/redes/location.svg" alt="">Cra. 8 #10-196, Villa de Leyva, Boyacá, Colombia</a>
+            </div>
+            <div class="modal-apartados">
+                <h5 class="theme-white">Tipos de Servicio</h5>
+                <div class="theme-white">
+                    <div class="where-service"><img src="./img/redes/stand.png" alt="">En sitio</div>
+                    <div class="where-service"><img src="./img/redes/takeaway.png" alt="">Para llevar</div>
+                </div>
+            </div>
+            <div class="modal-apartados">
+                <h5 class="theme-white">Horarios de Atención</h5>
+                <div class="theme-white schedule">
+                    <div class="days">Viernes, Sabado & Domingo<img src="./img/redes/relog.svg" alt="">9:00AM - 7:00 PM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-for-img">
+        <div id="pizzas"></div>
+        <div id="img-header"></div>
+    </div>
+    <header>
+        <nav class="nav">
+            <img class="animation-buttons" id="logo-europan" src="./img/logo.jpg" alt="Logo EuroPan" onclick="window.location.href = pageOficial">
+            <h2 class="name-europan"><b>EuroPanes</b></h2>
+            <button class="share-info open-button" id="open-button"><img src="./img/info.svg" alt=""></button>
+            <button class="share-info" id="share"><img src="./img/compartir.svg" alt=""></button>
+            <div class="nav-izquierda">
+                <a href="#null"  onclick="window.location.href = whatsapp" class="nav-izquierda animation-buttons"><img src="./img/redes/whats.svg" alt=""></a>
+                <a href="#null"  onclick="window.location.href = instagram" class="nav-izquierda animation-buttons"><img src="./img/redes/insta.svg" alt=""></a>
+                <img onclick="window.location.href = telefono" class="animation-buttons img-last" src="./img/redes/telefono.svg" alt="">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="nav-food">
+            <ul>
+                <li><a href="#pizzas" >Artesano de la 🍕</a></li>
+                <li><a href="#pastas" >Artesano de la 🍝</a></li>
+                <li><a href="#bebidas" >Bebidas 🍷</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="wrap">
+        <h2>Artesano de la 🍕</h2>
+        <div class="wrap-column2-carta">
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Margherita 🍅</h4>
+                    <p>Pomodoro, Albahaca, Rugula.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Tre Fratelli 🍖</h4>
+                    <p>Prosciutto, Salami, Jamón Pierna.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Quatro Formaggi 🧀</h4>
+                    <p>Gouda, Manchego, Parmesano, Mozzarella Bufala, Mozzarella Tradicional.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Alle Verdure 🧅</h4>
+                    <p>Espinaca, Champiñon, Cebolla, Pimentón Asado, Variedad Aceitunas.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Tonno 🐟</h4>
+                    <p>Atún, Mozzarella Búfala, Cebolla.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Genovesa 🍃</h4>
+                    <p>Pesto, Mozzarella.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Balsámico 🌿</h4>
+                    <p>Jamón, Rugula, Balsámico.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Dolce Vita 🍏</h4>
+                    <p>Manzana, Ciruela, Gouda, Búfala.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Di Nutella 🍫</h4>
+                    <p>Nutella, Almendra</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div id="pastas"></div>
+            <div class="food-carta" >
+                <div class="img-food-carta">
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza Raggio Di Sole 🌞</h4>
+                    <p>Huevo, Prosciutto.</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+            <div class="food-carta">
+                <div class="img-food-carta">
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pizza All'Capone 🌶</h4>
+                    <p>Tomate, Pimentón, Rugula, Guindilla (Picante).</p>
+                    <h5>$ 26.000</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrap">
+            <h2>Artesano de la 🍝</h2>
+        <div class="wrap-column2-carta">
+            <div class="food-carta">
+                <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+                <div class="title-food-carta" >
+                    <h4>Carbonara alla Ruota</h4>
+                    <p>Pancetta, Panna, Cebolla.</p>
+                    <p>Servida a la mesa en un Queso Parmesano.</p>
+                    <h5>$ 28.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+                <div class="title-food-carta" >
+                    <h4>Bolognesa alla Routa</h4>
+                    <p>Salsa Bolognesa, Parmesano.</p>
+                    <p>Servida a la mesa en un Queso Parmesano.</p>
+                    <h5>$ 28.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+                <div class="title-food-carta" >
+                    <h4>Matricciana alla Ruota</h4>
+                    <p>Pancetta, Pomodoro, Guindilla, Cebolla.</p>
+                    <p>Servida a la mesa en un Queso Parmesano.</p>
+                    <h5>$ 28.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+                <div class="title-food-carta" >
+                    <h4>Quattro Formaggi alla Ruota</h4>
+                    <p>Queso; Azúl, Gouda, Parmesano, Mozzarella.</p>
+                    <p>Pasada por un queso Parmesano, y gratinada en un horno de leña.</p>
+                    <h5>$ 32.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+                <div class="title-food-carta" >
+                    <h4>Al Pesto alla Ruota</h4>
+                    <p>Salsa Pesto, Parmesano.</p>
+                    <p>Servida a la mesa en un Queso Parmesano.</p>
+                    <h5 id="bebidas">$ 28.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+                <div class="title-food-carta" >
+                    <h4>Al Cartoccio</h4>
+                    <p>Salsa; Pomodoro, Panna, Pesto, e Molto Formaggio.</p>
+                    <p>En papel vegetal al horno de leña.</p>
+                    <h5>$ 32.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+                <div class="title-food-carta" >
+                    <h4>Lasagna de la casa</h4>
+                    <p>Bolognesa, mozzarella, parmesano.</p>
+                    <p>Horneada en horno de leña.</p>
+                    <h5>$ 28.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Pollo Siciliano Al Forno</h4>
+                    <p>Pollo marinado 24h en especias, horneado en horno de leña durante 6 horas, en un molde de cerámica de barro.</p>
+                    <p>Acompañado de Pasta y Ensalada.</p>
+                    <h5>$ 300.000</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrap">
+            <h2>Bebidas 🍷</h2>
+        <div class="wrap-column2-carta">
+            <div class="food-carta" >
+                <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+                <div class="title-food-carta" >
+                    <h4>Vino de la Casa 🍷</h4>
+                    <p>Vino Joven</p>
+                    <h5>$ 70.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Copa Vino</h4>
+                    <p>Copa Vino Carmenere 'Livana' de la Casa.</p>
+                    <h5>$ 12.500</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Cerveza Heineken</h4>
+                    <p>Lata Cerveza Heineken 330ml.</p>
+                    <h5>$ 8.000</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Agua</h4>
+                    <p>Botella de agua de manantial</p>
+                    <h5>$ 3.500</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Limonada Natural 🍋</h4>
+                    <h5>$ 4.500</h5>
+                </div>
+            </div>
+            <div class="food-carta" >
+                <div class="img-food-carta" >
+                    <img src="./img/pizzaa-menu.jpg" alt="">
+                </div>
+                <div class="title-food-carta" >
+                    <h4>Coca Cola</h4>
+                    <p>Botella 400 ml.</p>
+                    <h5>$ 4.500</h5>
+                </div>
+        </div>
+    </section>
+    <div class="end-menu"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#null"  onclick="window.location.href = whatsapp"><img src="./img/redes/whats-red.svg" alt=""></a>
+                <a href="#null"  onclick="window.location.href = instagram "><img src="./img/redes/insta-red.svg" alt=""></a>
+                <a href="#null" onclick="window.location.href = telefono"><img src="./img/redes/call-red.png" alt=""></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Bienvenido</a></li>
+                    <li><a id="open-footer">Sobre nosotros</a></li>
+                    <li><a href="#null"  onclick="window.location.href = telefono">Contáctenos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;2024; Designed By <b>EuroPanes</b></p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
