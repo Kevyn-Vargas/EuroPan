@@ -27,7 +27,7 @@ title {
 }
 
 #img-header {
-    background: url(./img/hd.jpg) no-repeat;
+    background: url(./img/foods/hd.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     width: 90%;
@@ -103,9 +103,10 @@ title {
 
 .where-service {
     background-color: white;
-    color:#202020;
+    color: #202020;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Espacio entre los elementos */
     border-radius: 10px;
     border: 2px solid #b8b8b8;
     margin: 0.8rem 0;
@@ -113,6 +114,15 @@ title {
     font-weight: 500;
     transition: filter 0.3s ease;
     transition: transform 0.2s ease;
+}
+
+.spacer {
+    flex-grow: 1; /* Hace que el espaciador ocupe todo el espacio restante */
+}
+
+.check {
+    width: 26px!important;
+    margin-right: 15px!important;
 }
 
 .where-service:hover {
@@ -239,11 +249,24 @@ hr {
 .nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-end;
     transition: all 0.5s ease;
     position: relative;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container.active {
+    margin: 0;
 }
 
 .nav.active {
@@ -255,18 +278,15 @@ hr {
 }
 
 .nav.active #logo-europan{
-    width: 85px;
-    margin-left: 2%;
-    border-radius: 10px;
-    margin-top: auto;
+    display: none;
 }
 
 .nav.active .name-europan{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .name-europan {
-    margin-left: 35px;
+    margin-left: 25px;
     font-size: 30px;
     margin-right: 15px;
 }
@@ -298,26 +318,6 @@ hr {
 }
 .img-last:hover {
     cursor: pointer;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 0.5s;
-    position: relative;
-}
-
-.container.active {
-    position: fixed;
-    width: 100%;
-    padding: 15px;
-    top: 0;
-    z-index: 1;
-    margin-top: 98px;
 }
 
 .nav-food ul li {
@@ -357,7 +357,7 @@ hr {
 
 .wrap {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .wrap h2{
@@ -403,12 +403,6 @@ hr {
 .title-food-carta p{
     color: #777777;
     font-size: 0.9rem;
-}
-
-@media (max-width: 680px) {
-    .wrap-column2-carta {
-        grid-template-columns: repeat(1,1fr);
-    }
 }
 
 .end-menu {
@@ -484,4 +478,154 @@ hr {
 .copyright b {
     background-color: #ff4747;
     color: black;
+}
+
+@media (max-width: 680px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin: 2%;
+    }
+
+    .window-background {
+        padding-top: 35px;
+    }
+
+    .window-container {
+        max-width: 300px;
+        max-height: 50%;
+    }
+
+    .window-container p {
+        font-size: 0.8rem;
+    }
+
+    .theme-white img {
+        margin: 0;
+        width: 20px;
+    }
+
+    .modal-title-europan h3 {
+    font-size: 1.1rem;
+    }
+
+    .modal-apartados h5 {
+        font-size: 0.9rem;
+    }
+
+    .where-service img {
+        width: 35px;
+    }
+
+    .days {
+        font-size: 0.7rem;
+    }
+
+    .days img {
+        width: 15px;
+    }
+
+    .div-address {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    #img-header {
+        height: 90px;
+        width: 100%;
+    }
+
+    #logo-europan {
+        width: 70px;
+        margin-top: -8%;
+        margin-left: 3%;
+    }
+
+    .name-europan {
+        font-size: 19px;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .share-info img {
+        width: 20px;
+    }
+
+    .share-info {
+        padding-right: 3px;
+        padding-bottom: 0;
+
+    }
+    
+    .nav-izquierda {
+        margin-left: 2px;
+        margin-bottom: 2px;
+    }
+
+    .nav-izquierda img {
+        width: 24px;
+        margin-left: 2px;
+    }
+
+    .img-last {
+        margin-right: 0;
+    }
+
+    .nav-food ul li a {
+        font-size: 1rem;
+    }
+
+    .nav-food ul li {
+        margin: 0 8px;
+    }
+
+    .wrap h2 {
+        margin: 10px 10px;
+        font-size: 16px;
+    }
+
+    .food-carta {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .title-food-carta {
+        font-size: 0.9rem;
+    }
+
+    .title-food-carta p {
+        color: #777777;
+        font-size: 0.7rem;
+    }
+
+    .img-food-carta img {
+        width: 150px;
+    }
+    hr {
+        width: 100%;
+    }
+
+    .wrap-column2-carta {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer-container {
+        padding: 0;
+    }
+
+    .social-icons a img {
+        width: 25px;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright p {
+        font-size: 0.8rem;
+    }
 }

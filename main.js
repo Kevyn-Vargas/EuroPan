@@ -30,17 +30,14 @@ window.addEventListener("keydown", function(event) {
 
 
 const nav = document.querySelector('.nav');
+const container = document.querySelector('.container');
 
 
 window.addEventListener('scroll', function(){
     nav.classList.toggle("active", window.scrollY >40)
-})
-
-const container = document.querySelector('.container');
-
-window.addEventListener('scroll', function(){
     container.classList.toggle("active", window.scrollY >40)
 })
+
 
 const shareContent = async () => {
   try {
