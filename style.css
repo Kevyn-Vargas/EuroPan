@@ -48,6 +48,7 @@ title {
 
 .share-info img {
     width: 29px;
+    height: auto;
 }
 
 .share-info:active, .animation-buttons:active {
@@ -72,6 +73,7 @@ title {
 }
 .theme-white img {
     width: 28px;
+    height: auto;
     margin: 2px;
     border-radius: 10px;
 }
@@ -132,6 +134,7 @@ title {
 
 .where-service img {
     width: 38px;
+    height: auto;
     background-color: white;
 }
 
@@ -159,6 +162,7 @@ title {
 
 .days img {
     width: 17px;
+    height: auto;
 }
 
 .window-background {
@@ -311,6 +315,7 @@ hr {
 
 .nav-izquierda img {
     width: 40px;
+    height: auto;
 }
 
 .img-last {
@@ -392,6 +397,7 @@ hr {
 
 .img-food-carta img{
     width: 180px;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -400,9 +406,13 @@ hr {
     padding: 0 1rem;
 }
 
-.title-food-carta p{
-    color: #777777;
+.title-food-carta h3 {
     font-size: 0.9rem;
+}
+
+.title-food-carta p{
+    color: #919191;
+    font-size: 0.8rem;
 }
 
 .end-menu {
@@ -426,6 +436,7 @@ hr {
 
 .social-icons a img {
     width: 40px;
+    height: auto;
     background-color: #252525;
 }
 
@@ -467,17 +478,17 @@ hr {
 }
 
 .copyright {
-    color: white;
     text-align: center;
 }
 
 .copyright p {
     background-color: #ff4747;
+    color: #242424;
     width: 100%;
 }
 .copyright b {
     background-color: #ff4747;
-    color: black;
+    color: #242424;
 }
 
 @media (max-width: 680px) {
@@ -506,6 +517,7 @@ hr {
     .theme-white img {
         margin: 0;
         width: 20px;
+        height: auto;
     }
 
     .modal-title-europan h3 {
@@ -518,6 +530,7 @@ hr {
 
     .where-service img {
         width: 35px;
+        height: auto;
     }
 
     .days {
@@ -526,6 +539,7 @@ hr {
 
     .days img {
         width: 15px;
+        height: auto;
     }
 
     .div-address {
@@ -552,6 +566,7 @@ hr {
 
     .share-info img {
         width: 20px;
+        height: auto;
     }
 
     .share-info {
@@ -567,6 +582,7 @@ hr {
 
     .nav-izquierda img {
         width: 24px;
+        height: auto;
         margin-left: 2px;
     }
 
@@ -603,6 +619,7 @@ hr {
 
     .img-food-carta img {
         width: 150px;
+        height: auto;
     }
     hr {
         width: 100%;
@@ -618,6 +635,7 @@ hr {
 
     .social-icons a img {
         width: 25px;
+        height: auto;
     }
 
     .footer-nav ul {
