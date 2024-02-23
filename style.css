@@ -580,7 +580,7 @@ hr {
     }
 
     .nav.active {
-        padding: 5px;
+        width: 130%;
     }
     
     .nav-izquierda {
