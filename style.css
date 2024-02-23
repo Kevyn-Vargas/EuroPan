@@ -578,6 +578,10 @@ hr {
         padding-bottom: 0;
 
     }
+
+    .nav.active {
+        padding: 10px;
+    }
     
     .nav-izquierda {
         margin-left: 2px;
