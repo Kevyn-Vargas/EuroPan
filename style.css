@@ -507,7 +507,7 @@ hr {
 
     .window-container {
         max-width: 300px;
-        max-height: 50%;
+        max-height: 80%;
     }
 
     .window-container p {
@@ -524,6 +524,10 @@ hr {
     font-size: 1.1rem;
     }
 
+    .modal-apartados {
+        margin: 20px 0;
+    }
+
     .modal-apartados h3 {
         font-size: 0.9rem;
     }
@@ -534,11 +538,11 @@ hr {
     }
 
     .days {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .days img {
-        width: 15px;
+        width: 12px;
         height: auto;
     }
 
