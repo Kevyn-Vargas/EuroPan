@@ -589,14 +589,6 @@ hr {
 
     }
 
-    .nav {
-        width: 130%;
-    }
-
-    .nav.active {
-        width: 130%;
-    }
-    
     .nav-izquierda {
         margin-left: 2px;
         margin-bottom: 2px;
