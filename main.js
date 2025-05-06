@@ -31,11 +31,13 @@ window.addEventListener("keydown", function(event) {
 
 const nav = document.querySelector('.nav');
 const container = document.querySelector('.container');
+const jeanAnime = document.querySelector('.jeanAnime');
 
 
 window.addEventListener('scroll', function(){
     nav.classList.toggle("active", window.scrollY >40)
     container.classList.toggle("active", window.scrollY >40)
+    jeanAnime.classList.toggle("hide", window.scrollY >40)
 })
 
 

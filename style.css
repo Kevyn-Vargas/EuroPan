@@ -295,16 +295,31 @@ hr {
     margin-right: 15px;
 }
 
-
 #logo-europan {
     width: 145px;
-    margin-left: 9%;
-    margin-top: -6%;
+    margin-left: 16%;
+    margin-top: -8%;
     border-radius: 10px;
 }
 
 #logo-europan:hover {
     cursor: pointer;
+}
+
+.jeanAnime {
+    width: 145px;
+    margin-left: 7%;
+    margin-top: -6%;
+    border-radius: 10px;
+}
+
+.jeanAnime:hover {
+    cursor: pointer;
+}
+
+.jeanAnime.hide {
+    display: none;
+    width: 0;
 }
 
 .nav-izquierda {
@@ -501,6 +516,13 @@ hr {
     color: #242424;
 }
 
+@media (max-width: 768px) {
+    #logo-europan {
+        margin-left: 23%;
+        margin-top: -12%;
+    }
+}
+
 @media (max-width: 680px) {
 
     * {
@@ -570,6 +592,16 @@ hr {
         width: 70px;
         margin-top: -8%;
         margin-left: 3%;
+    }
+
+    .jeanAnime {
+        width: 90px;
+        margin-left: auto;
+        margin-right: 3%;
+        margin-top: -15%;
+        display: flex;
+        position: relative;
+        z-index: 10;
     }
 
     .name-europan {
