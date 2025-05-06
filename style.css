@@ -375,6 +375,18 @@ hr {
     color: #ff4747;
 }
 
+.precio-doble {
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.nombre-precio-doble {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #c7c7c7;
+}
+
 .wrap {
     max-width: 1200px;
     margin: auto;
