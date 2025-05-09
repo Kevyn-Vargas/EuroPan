@@ -480,8 +480,9 @@ hr {
   }
 
   .main-image img {
-    width: 80%;
+    width: 100%;
     border-radius: 25px;
+    margin-right: 10%;
   }
   
   .sticker {
@@ -676,15 +677,11 @@ hr {
     }
 
     .title-pizza-fest {
-        font-size: 0.6rem
+        font-size: 0.5rem
     }
 
     .name-pizza-fest {
-        font-size: 0.7rem;
-    }
-
-    .br-trash {
-        display: none;
+        font-size: 0.6rem;
     }
 
     #text-date-fest {
