@@ -1,4 +1,4 @@
-const whatsapp =  "https://wa.me/573192661179?text=Hola%21%20Vengo%20de%20https%3A//europan.netlify.app/%20Mi%20pedido%20es%3A"
+const whatsapp =  "https://wa.me/573192661179?text=Hola%21%20Vengo%20de%20https%3A//europan.netlify.app/%0AMi%20pedido%20es%3A"
 const instagram = "https://www.instagram.com/europan.vdl/";
 const telefono = "tel:+573192083608";
 const pageOficial ="https://europan.netlify.app/";
