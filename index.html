@@ -1,447 +1,576 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title>EuroPanes - Menú, Precios y Teléfonos.</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/europan.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/europan.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <div class="window-background" id="window-background">
-        <div class="window-container" id="window-container">
-            <p class="theme-white">Información</p>
-            <button class="close-button" id="close-button" aria-label="Close Modal">&times;</button>
-            <div class="modal-title-europan theme-white">
-                <h3 class="theme-white">EuroPanes</h3>
-                <img id="logo-mini-europan" src="./img/foods/logo.jpg" alt="Logo EuroPan">
-            </div>
-            <div class="theme-white">
-                <a href="#null"  onclick="window.location.href = whatsapp" aria-label="Whatsapp"><img src="./img/redes/whats-theme-white.svg" alt=""></a>
-                <a href="#null"  onclick="window.location.href = instagram" aria-label="Instagram"><img src="./img/redes/insta-theme-white.svg" alt=""></a>
-                <a href="#null"  onclick="window.location.href = telefono" aria-label="Telefono"><img  src="./img/redes/telephone-theme-white.svg" alt=""></a>
-                <a id="share-2" aria-label="Share"><img src="./img/redes/share-theme-white.svg" alt=""></a>
-            </div>
-            <hr>
-            <div class="modal-apartados">
-                <h3 class="theme-white">Dirección</h3>
-                <a href="https://www.google.com/maps/place/5%C2%B038'03.3%22N+73%C2%B031'41.6%22W/@5.6342504,-73.5282228,17z/data=!3m1!4b1!4m4!3m3!8m2!3d5.6342504!4d-73.5282228?entry=ttu" target="_blank" class="theme-white div-address"><img src="./img/redes/location.svg" alt="">Cra. 8 #10-196, Villa de Leyva, Boyacá, Colombia</a>
-            </div>
-            <div class="modal-apartados">
-                <h3 class="theme-white">Tipos de Servicio</h3>
-                <div class="theme-white">
-                    <div class="where-service">
-                        <img src="./img/redes/stand.png" alt="">En sitio
-                        <div class="spacer"></div>
-                        <img class="check" src="./img/redes/check.svg" alt=""></div>
-                    <div class="where-service">
-                        <img src="./img/redes/takeaway.png" alt="">Para llevar
-                        <div class="spacer"></div>
-                        <img class="check" src="./img/redes/check.svg" alt=""></div>
-                </div>
-            </div>
-            <div class="modal-apartados">
-                <h3 class="theme-white">Horarios de Atención</h3>
-                <div class="theme-white schedule">
-                    <div class="days">Viernes, Sabados & Domingos<img src="./img/redes/relog.svg" alt="">9:00AM - 7:00 PM</div>
-                </div>
-            </div>
+      <div class="window-container" id="window-container">
+        <p class="theme-white">Información</p>
+        <button class="close-button" id="close-button" aria-label="Close Modal">
+          &times;
+        </button>
+        <div class="modal-title-europan theme-white">
+          <h3 class="theme-white">EuroPanes</h3>
+          <img
+            id="logo-mini-europan"
+            src="./img/foods/logo.jpg"
+            alt="Logo EuroPan"
+          />
         </div>
-    </div>
-    <div class="header-for-img">
-        <div id="pizzas"></div>
-        <div id="img-header"></div>
-    </div>
-    <img class="animation-buttons jeanAnime" src="./img/foods/JeanAnimado.jpg" alt="Logo EuroPan" onclick="window.location.href = pageOficial">
-    <header>
-        <nav class="nav">
-            <img class="animation-buttons" id="logo-europan" src="./img/foods/logo.jpg" alt="Logo EuroPan" onclick="window.location.href = pageOficial">
-            <h2 class="name-europan"><b>EuroPanes</b></h2>
-            <button class="share-info open-button" id="open-button" aria-label="More information"><img src="./img/redes/info.svg" alt=""></button>
-            <button class="share-info" id="share" aria-label="Share"><img src="./img/redes/compartir.svg" alt=""></button>
-            <div class="nav-izquierda">
-                <a href="#null"  onclick="window.location.href = whatsapp" class="nav-izquierda animation-buttons" aria-label="Whatsapp"><img src="./img/redes/whats.svg" alt=""></a>
-                <a href="#null"  onclick="window.location.href = instagram" class="nav-izquierda animation-buttons" aria-label="Instagram"><img src="./img/redes/insta.svg" alt=""></a>
-                <img onclick="window.location.href = telefono" class="animation-buttons img-last" src="./img/redes/telefono.svg" alt="">
+        <div class="theme-white">
+          <a
+            href="#null"
+            onclick="window.location.href = whatsapp"
+            aria-label="Whatsapp"
+            ><img src="./img/redes/whats-theme-white.svg" alt=""
+          /></a>
+          <a
+            href="#null"
+            onclick="window.location.href = instagram"
+            aria-label="Instagram"
+            ><img src="./img/redes/insta-theme-white.svg" alt=""
+          /></a>
+          <a
+            href="#null"
+            onclick="window.location.href = telefono"
+            aria-label="Telefono"
+            ><img src="./img/redes/telephone-theme-white.svg" alt=""
+          /></a>
+          <a id="share-2" aria-label="Share"
+            ><img src="./img/redes/share-theme-white.svg" alt=""
+          /></a>
+        </div>
+        <hr />
+        <div class="modal-apartados">
+          <h3 class="theme-white">Dirección</h3>
+          <a
+            href="https://www.google.com/maps/place/5%C2%B038'03.3%22N+73%C2%B031'41.6%22W/@5.6342504,-73.5282228,17z/data=!3m1!4b1!4m4!3m3!8m2!3d5.6342504!4d-73.5282228?entry=ttu"
+            target="_blank"
+            class="theme-white div-address"
+            ><img src="./img/redes/location.svg" alt="" />Cra. 8 #10-196, Villa
+            de Leyva, Boyacá, Colombia</a
+          >
+        </div>
+        <div class="modal-apartados">
+          <h3 class="theme-white">Tipos de Servicio</h3>
+          <div class="theme-white">
+            <div class="where-service">
+              <img src="./img/redes/stand.png" alt="" />En sitio
+              <div class="spacer"></div>
+              <img class="check" src="./img/redes/check.svg" alt="" />
             </div>
-            <div class="container">
-                <div class="nav-food">
-                    <ul>
-                        <li><a href="#pizzas" >Pizzas 🍕</a></li>
-                        <li><a href="#raviolis" > Raviolis 🥟</a></li>
-                        <li><a href="#pastas" >Pastas 🍝</a></li>
-                        <li><a href="#bebidas" >Bebidas 🍷</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section class="wrap">
-        <div class="banner">
-            <div class="banner-left">
-              <div class="main-image">
-                <img src="img/foods/pizza-fest.jpg" alt="Pizza" />
-                <img class="sticker" src="img/foods/logo-participante-pizza-fest.png" alt="Sticker" />
-              </div>
-            </div>
-            <div class="banner-right">
-              <h2 id="text-date-fest">Únicamente del 9 al 28 de Mayo</h2>
-              <p><span class="title-pizza-fest">Pizza Participante:</span><br><span class="name-pizza-fest"><strong>Di Ficco 🍁 & Fugazzetta 🧅</strong><br>por solo <strong>$22.000</strong></span></p>
+            <div class="where-service">
+              <img src="./img/redes/takeaway.png" alt="" />Para llevar
+              <div class="spacer"></div>
+              <img class="check" src="./img/redes/check.svg" alt="" />
             </div>
           </div>
-        <h2>Pizzas 🍕</h2>
-        <div class="wrap-column2-carta">
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/Pizza-di-fico.jpg" alt="Pizza-di-fico">
-                </div>
-                <div class="title-food-carta" >
-                    <h3><p>¡Nueva!</p> Pizza di Fico ✨🍁</h3>
-                    <p>Higos maduros, queso azul, miel y prosciutto.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/fugazzeta.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3><p>¡Nueva!</p> Pizza Fugazzetta 🧅🇦🇷</h3>
-                    <p>Jamón de Pavo, Cebolla & Rellena de 600 gr Queso. 🧀</p>
-                    <span class="precio-doble"><span class="nombre-precio-doble">Media</span> $ 30.000</span>
-                    <br>
-                    <span class="precio-doble"><span class="nombre-precio-doble">Completa</span> $ 60.000</span>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/margarita.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Margherita 🍅</h3>
-                    <p>Pomodoro, Albahaca, Rugula.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/tre fratelli.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Tre Fratelli 🍖</h3>
-                    <p>Prosciutto, Salami, Jamón Pierna.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/formaggi.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Quatro Formaggi 🧀</h3>
-                    <p>Gouda, Manchego, Parmesano, Mozzarella Bufala, Mozzarella Tradicional.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/Alle Verdure.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Alle Verdure 🧅</h3>
-                    <p>Espinaca, Champiñon, Cebolla, Pimentón Asado, Variedad Aceitunas.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/tonno.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Tonno 🐟</h3>
-                    <p>Atún, Mozzarella Búfala, Cebolla.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/Genovesa.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Genovesa 🍃</h3>
-                    <p>Pesto, Mozzarella.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/balsamico.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Balsámico 🌿</h3>
-                    <p>Jamón, Rugula, Balsámico.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/dolce-vita.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Dolce Vita 🍏</h3>
-                    <p>Manzana, Ciruela, Gouda, Búfala.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img src="./img/foods/nutella.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Di Nutella 🍫</h3>
-                    <p>Nutella, Almendra</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta">
-                    <img src="./img/foods/raggio di sole.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Pizza Raggio Di Sole 🌞</h3>
-                    <p>Huevo, Prosciutto.</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
-            <div class="food-carta">
-                <div class="img-food-carta">
-                    <img src="./img/foods/balsamico-2.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3 id ="raviolis">Pizza All'Capone 🌶</h3>
-                    <p>Tomate, Pimentón, Rugula, Guindilla (Picante).</p>
-                    <h3>$ 35.000</h3>
-                </div>
-            </div>
         </div>
-    </section>
-    <section class="wrap">
-        <h2>Pasta Ripiena ~ Raviolis 🥟</h2>
-    <div class="wrap-column2-carta">
-        <div class="food-carta">
-            <!-- <div class="img-food-carta" >
-                <img src="" alt="">
-            </div> -->
-            <div class="title-food-carta" >
-                <h3>Agnoloti di Ricotta e Spinaci 🥬</h3>
-                <p>Espinaca, queso ricotta, quinoa.</p>
-                <h3>$ 32.000</h3>
+        <div class="modal-apartados">
+          <h3 class="theme-white">Horarios de Atención</h3>
+          <div class="theme-white schedule">
+            <div class="days">
+              Viernes, Sabados & Domingos<img
+                src="./img/redes/relog.svg"
+                alt=""
+              />9:00AM - 7:00 PM
             </div>
+          </div>
         </div>
-        <div class="food-carta">
-            <!-- <div class="img-food-carta" >
-                <img src="" alt="">
-            </div> -->
-            <div class="title-food-carta" >
-                <h3>Tortellini di Zucca e Parmesano 🧀</h3>
-                <p>Auyama, parmesano.</p>
-                <h3>$ 32.000</h3>
-            </div>
-        </div>
-        <div class="food-carta">
-            <!-- <div class="img-food-carta" >
-                <img src="" alt="">
-            </div> -->
-            <div class="title-food-carta" >
-                <h3>Ravioli al Salmone 🐟</h3>
-                <p>Salmon, Cebollin, perejil.</p>
-                <h3>$ 38.000</h3>
-            </div>
-        </div>
-        <div class="food-carta">
-            <!-- <div class="img-food-carta" >
-                <img src="" alt="">
-            </div> -->
-            <div class="title-food-carta" >
-                <h3>Raviolone "Carbonara" 🥓</h3>
-                <p>Ricotta, yema, limon, perejil, parmesano.</p>
-                <h3 id="pastas">$ 32.000</h3>
-            </div>
-        </div>
+      </div>
     </div>
-</section>
-    <section class="wrap">
-            <h2>Pastas 🍝</h2>
-        <div class="wrap-column2-carta">
-            <div class="food-carta">
-                <!-- <div class="img-food-carta" >
-                    <img src="" alt="">
-                </div> -->
-                <div class="title-food-carta" >
-                    <h3>Fettuccine alla Carbonara 🐷</h3>
-                    <p>Pancetta, Pamesano, Cebolla.</p>
-                    <p>Servida a la mesa en un Queso Parmesano.</p>
-                    <h3>$ 32.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <!-- <div class="img-food-carta" >
-                    <img src="" alt="">
-                </div> -->
-                <div class="title-food-carta" >
-                    <h3>Fettucini alle Vongole 🐚</h3>
-                    <p>Vongole, Vino Bianco, Prezzemolo, e Pomodoro</p>
-                    <h3>$ 32.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <!-- <div class="img-food-carta" >
-                    <img src="" alt="">
-                </div> -->
-                <div class="title-food-carta" >
-                    <h3>Fettuccine alla Matriciana 🍅</h3>
-                    <p>Pancetta, Pomodoro, Guindilla, Cebolla.</p>
-                    <h3>$ 32.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <!-- <div class="img-food-carta" >
-                    <img src="" alt="">
-                </div> -->
-                <div class="title-food-carta" >
-                    <h3>Fettuccine ai quattro formaggio  🧀</h3>
-                    <p>Queso; Azúl, Gouda, Parmesano, Mozzarella.</p>
-                    <h3>$ 32.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <!-- <div class="img-food-carta" >
-                    <img src="" alt="">
-                </div> -->
-                <div class="title-food-carta" >
-                    <h3>Fettuccine al Pesto 🍃</h3>
-                    <p>Salsa Pesto, Parmesano.</p>
-                    <h3>$ 32.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <!-- <div class="img-food-carta" >
-                    <img src="" alt="">
-                </div> -->
-                <div class="title-food-carta" >
-                    <h3>Al cartoccio🔥</h3>
-                    <p>Salsa; Pomodoro, Panna, Pesto, e Molto Formaggio.</p>
-                    <p>En papel vegetal al horno de leña.</p>
-                    <h3>$ 32.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <!-- <div class="img-food-carta" >
-                    <img src="" alt="">
-                </div> -->
-                <div class="title-food-carta" >
-                    <h3>Lasagna de la casa</h3>
-                    <p>Bolognesa, mozzarella, parmesano.</p>
-                    <p>Horneada en horno de leña.</p>
-                    <h3>$ 32.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-food-carta" >
-                    <img id="pollo" src="./img/foods/pollo.webp" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3 id="bebidas">Pollo Siciliano Al Forno</h3>
-                    <p>Pollo marinado 24h en especias, horneado en horno de leña durante 6 horas, en un molde de cerámica de barro.</p>
-                    <p>Acompañado de Pasta y Ensalada.</p>
-                    <h3>$ 300.000</h3>
-                </div>
-            </div>
+    <div class="header-for-img">
+      <div id="pizzas"></div>
+      <div id="img-header"></div>
+    </div>
+    <img
+      class="animation-buttons jeanAnime"
+      src="./img/foods/JeanAnimado.jpg"
+      alt="Logo EuroPan"
+      onclick="window.location.href = pageOficial"
+    />
+    <header>
+      <nav class="nav">
+        <img
+          class="animation-buttons"
+          id="logo-europan"
+          src="./img/foods/logo.jpg"
+          alt="Logo EuroPan"
+          onclick="window.location.href = pageOficial"
+        />
+        <h2 class="name-europan"><b>EuroPanes</b></h2>
+        <button
+          class="share-info open-button"
+          id="open-button"
+          aria-label="More information"
+        >
+          <img src="./img/redes/info.svg" alt="" />
+        </button>
+        <button class="share-info" id="share" aria-label="Share">
+          <img src="./img/redes/compartir.svg" alt="" />
+        </button>
+        <div class="nav-izquierda">
+          <a
+            href="#null"
+            onclick="window.location.href = whatsapp"
+            class="nav-izquierda animation-buttons"
+            aria-label="Whatsapp"
+            ><img src="./img/redes/whats.svg" alt=""
+          /></a>
+          <a
+            href="#null"
+            onclick="window.location.href = instagram"
+            class="nav-izquierda animation-buttons"
+            aria-label="Instagram"
+            ><img src="./img/redes/insta.svg" alt=""
+          /></a>
+          <img
+            onclick="window.location.href = telefono"
+            class="animation-buttons img-last"
+            src="./img/redes/telefono.svg"
+            alt=""
+          />
         </div>
+        <div class="container">
+          <div class="nav-food">
+            <ul>
+              <li><a href="#pizzas">Pizzas 🍕</a></li>
+              <li><a href="#raviolis"> Raviolis 🥟</a></li>
+              <li><a href="#pastas">Pastas 🍝</a></li>
+              <li><a href="#bebidas">Bebidas 🍷</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="wrap">
+      <div class="banner">
+        <div class="banner-left">
+          <div class="main-image">
+            <img src="img/foods/pizza-fest.jpg" alt="Pizza" />
+            <a href="https://www.lasupersona.com/super-pizza-sushi-fest/"
+              ><img
+                class="sticker"
+                src="img/foods/logo-participante-pizza-fest.png"
+                alt="Sticker"
+            /></a>
+          </div>
+        </div>
+        <div class="banner-right">
+          <h3 class="title-fest">Super Pizza Fest</h3>
+          <h2 id="text-date-fest">Únicamente del 9 al 28 de Mayo</h2>
+          <p>
+            <span class="title-pizza-fest">Pizza Participante:</span><br /><span
+              class="name-pizza-fest"
+              ><strong>Di Ficco 🍁 & Fugazzetta 🧅</strong><br />por solo
+              <strong>$22.000</strong></span
+            >
+          </p>
+        </div>
+      </div>
+      <a
+        href="https://forms.gle/Fgd6vxXUtcRiLqe28"
+        target="_blank"
+        class="boton-votar"
+      >
+        Vota por Europan
+      </a>
+      <h2>Pizzas 🍕</h2>
+      <div class="wrap-column2-carta">
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/Pizza-di-fico.jpg" alt="Pizza-di-fico" />
+          </div>
+          <div class="title-food-carta">
+            <h3>
+              <p>¡Nueva!</p>
+              Pizza di Fico ✨🍁
+            </h3>
+            <p>Higos maduros, queso azul, miel y prosciutto.</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/fugazzeta.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>
+              <p>¡Nueva!</p>
+              Pizza Fugazzetta 🧅🇦🇷
+            </h3>
+            <p>Jamón de Pavo, Cebolla & Rellena de 600 gr Queso. 🧀</p>
+            <span class="precio-doble"
+              ><span class="nombre-precio-doble">Media</span> $ 30.000</span
+            >
+            <br />
+            <span class="precio-doble"
+              ><span class="nombre-precio-doble">Completa</span> $ 60.000</span
+            >
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/margarita.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Margherita 🍅</h3>
+            <p>Pomodoro, Albahaca, Rugula.</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/tre fratelli.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Tre Fratelli 🍖</h3>
+            <p>Prosciutto, Salami, Jamón Pierna.</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/formaggi.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Quatro Formaggi 🧀</h3>
+            <p>
+              Gouda, Manchego, Parmesano, Mozzarella Bufala, Mozzarella
+              Tradicional.
+            </p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/Alle Verdure.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Alle Verdure 🧅</h3>
+            <p>
+              Espinaca, Champiñon, Cebolla, Pimentón Asado, Variedad Aceitunas.
+            </p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/tonno.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Tonno 🐟</h3>
+            <p>Atún, Mozzarella Búfala, Cebolla.</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/Genovesa.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Genovesa 🍃</h3>
+            <p>Pesto, Mozzarella.</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/balsamico.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Balsámico 🌿</h3>
+            <p>Jamón, Rugula, Balsámico.</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/dolce-vita.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Dolce Vita 🍏</h3>
+            <p>Manzana, Ciruela, Gouda, Búfala.</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/nutella.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Di Nutella 🍫</h3>
+            <p>Nutella, Almendra</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/raggio di sole.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Pizza Raggio Di Sole 🌞</h3>
+            <p>Huevo, Prosciutto.</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img src="./img/foods/balsamico-2.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3 id="raviolis">Pizza All'Capone 🌶</h3>
+            <p>Tomate, Pimentón, Rugula, Guindilla (Picante).</p>
+            <h3>$ 35.000</h3>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="wrap">
-            <h2>Bebidas 🍷</h2>
-        <div class="wrap-column2-carta">
-            <div class="food-carta" >
-                <div class="img-bebidas" >
-                    <img src="./img/foods/copa-de-vino.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Vino de la Casa 🍷</h3>
-                    <p>Vino Joven</p>
-                    <h3>$ 80.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-bebidas" >
-                    <img src="./img/foods/Botella de Vino.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Copa Vino</h3>
-                    <p>Copa Vino Carmenere 'Livana' de la Casa.</p>
-                    <h3>$ 15.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-bebidas" >
-                    <img src="./img/foods/Heineken.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Cerveza Heineken</h3>
-                    <p>Lata Cerveza Heineken 330ml.</p>
-                    <h3>$ 8.000</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-bebidas" >
-                    <img src="./img/foods/water.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Agua</h3>
-                    <p>Botella de agua de manantial</p>
-                    <h3>$ 3.500</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <!-- <div class="img-bebidas" >
+      <h2>Pasta Ripiena ~ Raviolis 🥟</h2>
+      <div class="wrap-column2-carta">
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                <img src="" alt="">
+            </div> -->
+          <div class="title-food-carta">
+            <h3>Agnoloti di Ricotta e Spinaci 🥬</h3>
+            <p>Espinaca, queso ricotta, quinoa.</p>
+            <h3>$ 32.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                <img src="" alt="">
+            </div> -->
+          <div class="title-food-carta">
+            <h3>Tortellini di Zucca e Parmesano 🧀</h3>
+            <p>Auyama, parmesano.</p>
+            <h3>$ 32.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                <img src="" alt="">
+            </div> -->
+          <div class="title-food-carta">
+            <h3>Ravioli al Salmone 🐟</h3>
+            <p>Salmon, Cebollin, perejil.</p>
+            <h3>$ 38.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                <img src="" alt="">
+            </div> -->
+          <div class="title-food-carta">
+            <h3>Raviolone "Carbonara" 🥓</h3>
+            <p>Ricotta, yema, limon, perejil, parmesano.</p>
+            <h3 id="pastas">$ 32.000</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap">
+      <h2>Pastas 🍝</h2>
+      <div class="wrap-column2-carta">
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
                     <img src="" alt="">
                 </div> -->
-                <div class="title-food-carta" >
-                    <h3>Limonada Natural 🍋</h3>
-                    <h3>$ 4.500</h3>
-                </div>
-            </div>
-            <div class="food-carta" >
-                <div class="img-bebidas" >
-                    <img src="./img/foods/coca-cola.jpg" alt="">
-                </div>
-                <div class="title-food-carta" >
-                    <h3>Coca Cola</h3>
-                    <p>Botella 400 ml.</p>
-                    <h3>$ 4.500</h3>
-                </div>
+          <div class="title-food-carta">
+            <h3>Fettuccine alla Carbonara 🐷</h3>
+            <p>Pancetta, Pamesano, Cebolla.</p>
+            <p>Servida a la mesa en un Queso Parmesano.</p>
+            <h3>$ 32.000</h3>
+          </div>
         </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+          <div class="title-food-carta">
+            <h3>Fettucini alle Vongole 🐚</h3>
+            <p>Vongole, Vino Bianco, Prezzemolo, e Pomodoro</p>
+            <h3>$ 32.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+          <div class="title-food-carta">
+            <h3>Fettuccine alla Matriciana 🍅</h3>
+            <p>Pancetta, Pomodoro, Guindilla, Cebolla.</p>
+            <h3>$ 32.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+          <div class="title-food-carta">
+            <h3>Fettuccine ai quattro formaggio 🧀</h3>
+            <p>Queso; Azúl, Gouda, Parmesano, Mozzarella.</p>
+            <h3>$ 32.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+          <div class="title-food-carta">
+            <h3>Fettuccine al Pesto 🍃</h3>
+            <p>Salsa Pesto, Parmesano.</p>
+            <h3>$ 32.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+          <div class="title-food-carta">
+            <h3>Al cartoccio🔥</h3>
+            <p>Salsa; Pomodoro, Panna, Pesto, e Molto Formaggio.</p>
+            <p>En papel vegetal al horno de leña.</p>
+            <h3>$ 32.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-food-carta" >
+                    <img src="" alt="">
+                </div> -->
+          <div class="title-food-carta">
+            <h3>Lasagna de la casa</h3>
+            <p>Bolognesa, mozzarella, parmesano.</p>
+            <p>Horneada en horno de leña.</p>
+            <h3>$ 32.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-food-carta">
+            <img id="pollo" src="./img/foods/pollo.webp" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3 id="bebidas">Pollo Siciliano Al Forno</h3>
+            <p>
+              Pollo marinado 24h en especias, horneado en horno de leña durante
+              6 horas, en un molde de cerámica de barro.
+            </p>
+            <p>Acompañado de Pasta y Ensalada.</p>
+            <h3>$ 300.000</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap">
+      <h2>Bebidas 🍷</h2>
+      <div class="wrap-column2-carta">
+        <div class="food-carta">
+          <div class="img-bebidas">
+            <img src="./img/foods/copa-de-vino.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Vino de la Casa 🍷</h3>
+            <p>Vino Joven</p>
+            <h3>$ 80.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-bebidas">
+            <img src="./img/foods/Botella de Vino.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Copa Vino</h3>
+            <p>Copa Vino Carmenere 'Livana' de la Casa.</p>
+            <h3>$ 15.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-bebidas">
+            <img src="./img/foods/Heineken.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Cerveza Heineken</h3>
+            <p>Lata Cerveza Heineken 330ml.</p>
+            <h3>$ 8.000</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-bebidas">
+            <img src="./img/foods/water.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Agua</h3>
+            <p>Botella de agua de manantial</p>
+            <h3>$ 3.500</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <!-- <div class="img-bebidas" >
+                    <img src="" alt="">
+                </div> -->
+          <div class="title-food-carta">
+            <h3>Limonada Natural 🍋</h3>
+            <h3>$ 4.500</h3>
+          </div>
+        </div>
+        <div class="food-carta">
+          <div class="img-bebidas">
+            <img src="./img/foods/coca-cola.jpg" alt="" />
+          </div>
+          <div class="title-food-carta">
+            <h3>Coca Cola</h3>
+            <p>Botella 400 ml.</p>
+            <h3>$ 4.500</h3>
+          </div>
+        </div>
+      </div>
     </section>
     <div class="end-menu"></div>
     <footer>
-        <div class="footer-container">
-            <div class="social-icons">
-                <a href="#null"  onclick="window.location.href = whatsapp" aria-label="Whatsapp"><img src="./img/redes/whats-red.svg" alt=""></a>
-                <a href="#null"  onclick="window.location.href = instagram " aria-label="Instagram"><img src="./img/redes/insta-red.svg" alt=""></a>
-                <a href="#null" onclick="window.location.href = telefono" aria-label="Telefono"><img src="./img/redes/call-red.png" alt=""></a>
-            </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="#">Bienvenido</a></li>
-                    <li><a id="open-footer">Sobre nosotros</a></li>
-                    <li><a href="#null"  onclick="window.location.href = telefono">Contáctenos</a></li>
-                </ul>
-            </div>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a
+            href="#null"
+            onclick="window.location.href = whatsapp"
+            aria-label="Whatsapp"
+            ><img src="./img/redes/whats-red.svg" alt=""
+          /></a>
+          <a
+            href="#null"
+            onclick="window.location.href = instagram "
+            aria-label="Instagram"
+            ><img src="./img/redes/insta-red.svg" alt=""
+          /></a>
+          <a
+            href="#null"
+            onclick="window.location.href = telefono"
+            aria-label="Telefono"
+            ><img src="./img/redes/call-red.png" alt=""
+          /></a>
         </div>
-        <div class="copyright">
-            <p>Copyright &copy;2024; Designed By <b>EuroPanes</b></p>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#">Bienvenido</a></li>
+            <li><a id="open-footer">Sobre nosotros</a></li>
+            <li>
+              <a href="#null" onclick="window.location.href = telefono"
+                >Contáctenos</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy;2024; Designed By <b>EuroPanes</b></p>
+      </div>
     </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
