@@ -376,6 +376,13 @@ hr {
   color: #ff4747;
 }
 
+.logo-fest {
+  width: 70px;
+  margin-left: -30px;
+  margin-top: -10px;
+  align-self: baseline;
+}
+
 .precio-doble {
   font-weight: 500;
   font-size: 0.8rem;
@@ -424,7 +431,7 @@ hr {
 }
 
 .img-food-carta img {
-  width: 180px;
+  width: 230px;
   height: auto;
   border-radius: 5px;
 }
@@ -450,6 +457,11 @@ hr {
 
 .title-food-carta p {
   color: #919191;
+  font-size: 0.8rem;
+}
+
+.title-food-carta i {
+  color: #bd9d7d;
   font-size: 0.8rem;
 }
 
@@ -788,6 +800,11 @@ hr {
 
   .title-food-carta p {
     color: #777777;
+    font-size: 0.7rem;
+  }
+
+  .title-food-carta i {
+    color: #c5aa8f;
     font-size: 0.7rem;
   }
 
